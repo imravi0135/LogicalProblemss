@@ -12,7 +12,7 @@ namespace LogicalProblemss
         {
             Console.WriteLine("Welcome to the Logical Programs");
             Console.WriteLine("Enter The Program Number to get Execute \n1.Fibonacci Series \n2.Perfect Number" +
-               "\n3.PrimeNumber" );
+               "\n3.PrimeNumber \n4.Reverse A Number" );
             int Option;
             Option = Convert.ToInt32(Console.ReadLine());
              
@@ -29,6 +29,10 @@ namespace LogicalProblemss
                 case 3:
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.Prime();
+                    break;
+                case 4:
+                    ReverseANumber reverseANumber = new ReverseANumber();
+                    reverseANumber.Reverse();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Option");
