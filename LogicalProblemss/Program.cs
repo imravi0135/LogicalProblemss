@@ -11,7 +11,7 @@ namespace LogicalProblemss
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Logical Programs");
-            Console.WriteLine("Enter The Program Number to get Execute \n1.Fibonacci Series");
+            Console.WriteLine("Enter The Program Number to get Execute \n1.Fibonacci Series \n2.Perfect Number");
             int Option;
             Option = Convert.ToInt32(Console.ReadLine());
              
@@ -20,6 +20,10 @@ namespace LogicalProblemss
                 case 1:
                     Fibonacci fibonacci = new Fibonacci();
                     fibonacci.Fibo();
+                    break;
+                case 2:
+                    PerfectNumber perfectNumber = new PerfectNumber();
+                    perfectNumber.Perfect();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Option");
